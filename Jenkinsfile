@@ -16,13 +16,13 @@ pipeline {
 
         stage('Instalar dependencias') {
             steps {
-                bat 'C:\\Users\\brangovich\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pip.exe install -r mlops\\requirements.txt'
+                bat 'C:\\Users\\Usuario\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pip.exe install -r mlops\\requirements.txt'
             }
         }
 
         stage('Entrenar modelo') {
             steps {
-                bat 'python mlops_1/train_model.py'
+                bat 'python mlops/train_model.py'
             }
         }
 
